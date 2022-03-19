@@ -1,0 +1,39 @@
+
+
+.listagem {
+    max-width: 200px;
+}
+
+.listagem .pokemon{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 10px;
+    background-color: #6b727a;
+    color: #ffffff;
+    padding: 0 5px;
+    cursor: pointer;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    min-height: 70px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition: 0.15s ease-in-out;
+}
+
+.pokemon:hover{
+    transform: scale(1.05);
+}
+
+.listagem .pokemon img{
+    width: 25%;
+    border-radius: 50%;
+}
+
+span {
+    padding-right: 20px;
+
+}
+
+.pokemon.ativo {
+    background-color: #FA6668;
+}
