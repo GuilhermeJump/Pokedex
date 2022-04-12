@@ -6,7 +6,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pokédex</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/cartao.css">
+    <link rel="stylesheet" href="./css/listagem.css">
+    <link rel="stylesheet" href="./css/responsivo.css">
+
     <link rel="shortcut icon" href="/imagens/pokeball_icon.png" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;800&family=Roboto:wght@100;300;400;500&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -14,7 +26,7 @@
         <div class="pokedex">
             <div class="cartoes-pokemon">
 
-                <div class="cartao-pokemon">
+                <div class="cartao-pokemon aberto tipo-planta" id="cartao-bulbasaur">
                     <div class="cartao-topo">
                         <div class="detalhes">
                             <h2 class="nome">Bulbasaur</h2>
@@ -53,7 +65,7 @@
                     </div>
                 </div>
 
-                <div class="cartao-pokemon">
+                <div class="cartao-pokemon tipo-fogo" id="cartao-charmander">
                     <div class="cartao-topo">
                         <div class="detalhes">
                             <h2 class="nome">Charmander</h2>
@@ -92,7 +104,7 @@
                     </div>
                 </div>
 
-                <div class="cartao-pokemon">
+                <div class="cartao-pokemon tipo-eletrico" id="cartao-pikachu">
                     <div class="cartao-topo">
                         <div class="detalhes">
                             <h2 class="nome">Pikachu</h2>
@@ -132,7 +144,7 @@
                     </div>
                 </div>
 
-                <div class="cartao-pokemon">
+                <div class="cartao-pokemon tipo-fantasma" id="cartao-gengar">
                     <div class="cartao-topo">
                         <div class="detalhes">
                             <h2 class="nome">Gengar</h2>
@@ -171,7 +183,7 @@
                     </div>
                 </div>
 
-                <div class="cartao-pokemon">
+                <div class="cartao-pokemon tipo-agua" id="cartao-gyarados">
                     <div class="cartao-topo">
                         <div class="detalhes">
                             <h2 class="nome">Gyarados</h2>
@@ -203,14 +215,15 @@
 
                             <p>
                                 Intimidar:
-                                Pokémon intimida Pokémon adversários ao entrar na batalha, diminuindo seu status de ataque.
+                                Pokémon intimida Pokémon adversários ao entrar na batalha, diminuindo seu status de
+                                ataque.
                             </p>
 
                         </div>
                     </div>
                 </div>
 
-                <div class="cartao-pokemon">
+                <div class="cartao-pokemon tipo-dragao" id="cartao-dragonite">
                     <div class="cartao-topo">
                         <div class="detalhes">
                             <h2 class="nome">Dragonite</h2>
@@ -248,7 +261,7 @@
                     </div>
                 </div>
 
-                <div class="cartao-pokemon">
+                <div class="cartao-pokemon tipo-pedra" id="cartao-sudowoodo">
                     <div class="cartao-topo">
                         <div class="detalhes">
                             <h2 class="nome">Sudowoodo</h2>
@@ -288,42 +301,42 @@
             </div>
 
             <nav class="listagem">
-              <ul>
-                  <li class="pokemon" >
-                      <img src="/imagens/cabeca-bulbasaur.png" alt="cabeça do pokémon bulbasaur">
-                      <span>Bulbasaur</span>
-                  </li>
-                  <li>
-                    <img src="/imagens/cabeca-charmander.png" alt="cabeça do pokémon charmander">
-                    <span>Charmander</span>
-                  </li>
-                  <li>
-                    <img src="/imagens/cabeca-pikachu.png" alt="cabeça do pokémon pikachu">
-                    <span>Pikachu</span>
-                  </li>
-                  <li>
-                    <img src="/imagens/cabeca-gengar.png" alt="cabeça do pokémon gengar">
-                    <span>Gengar</span>
-                  </li>
-                  <li>
-                    <img src="/imagens/cabeca-gyarados.png" alt="cabeça do pokémon gyarados">
-                    <span>Gyarados</span>
-                  </li>
-                  <li>
-                    <img src="/imagens/cabeca-dragonite.png" alt="cabeça do pokémon dragonite">
-                    <span>Dragonite</span>
-                  </li>
-                  <li>
-                    <img src="/imagens/cabeca-sudowoodo.png" alt="cabeça do pokémon sudowoodo">
-                    <span>Sudowoodo</span>
-                  </li>
-              </ul>
+                <ul>
+                    <li class="pokemon ativo" id="bulbasaur">
+                        <img src="./imagens/cabeca-bulbasaur.png" alt="cabeça do pokémon bulbasaur">
+                        <span>Bulbasaur</span>
+                    </li>
+                    <li class="pokemon" id="charmander">
+                        <img src="./imagens/cabeca-charmander.png" alt="cabeça do pokémon charmander">
+                        <span>Charmander</span>
+                    </li>
+                    <li class="pokemon" id="pikachu">
+                        <img src="./imagens/cabeca-pikachu.png" alt="cabeça do pokémon pikachu">
+                        <span>Pikachu</span>
+                    <li>
+                    <li class="pokemon" id="gengar">
+                        <img src="./imagens/cabeca-gengar.png" alt="cabeça do pokémon gengar">
+                        <span>Gengar</span>
+                    </li>
+                    <li class="pokemon" id="gyarados">
+                        <img src="./imagens/cabeca-gyarados.png" alt="cabeça do pokémon Gyarados">
+                        <span>Gyarados</span>
+                    </li>
+                    <li class="pokemon" id="dragonite">
+                        <img src="./imagens/cabeca-dragonite.png" alt="cabeça do pokémon dragonite">
+                        <span>Dragonite</span>
+                    </li>
+                    <li class="pokemon" id="sudowoodo">
+                        <img src="./imagens/cabeca-sudowoodo.png" alt="cabeça do pokémon sudowoodo">
+                        <span>Sudowoodo</span>
+                    </li>
+                </ul>
             </nav>
 
-            
+
         </div>
     </main>
 
+    <script src="js/index.js"></script>
 </body>
-
 </html>
